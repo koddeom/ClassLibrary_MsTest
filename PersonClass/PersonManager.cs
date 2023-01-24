@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ClassLibrary_MsTest.PersonClass
 {
@@ -25,9 +24,8 @@ namespace ClassLibrary_MsTest.PersonClass
 
         public List<Person> GetPeople()
         {
-
             List<Person> people = new List<Person>();
-            
+
             people.Add(new Person() { Firstname = "Vinicius", Lastname = "Andrade" });
             people.Add(new Person() { Firstname = "laura", Lastname = "Antonia" });
             people.Add(new Person() { Firstname = "Tiago", Lastname = "Paulo" });
@@ -39,11 +37,10 @@ namespace ClassLibrary_MsTest.PersonClass
         {
             List<Person> people = new List<Person>();
 
-            people.Add(CreatePerson("Vinicius","Andrade",true));
+            people.Add(CreatePerson("Vinicius", "Andrade", true));
             people.Add(CreatePerson("laura", "Antonia", true));
 
             return people;
-
         }
     }
 }
